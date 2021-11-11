@@ -713,6 +713,9 @@ int regTestMasks[] = {
  * ok+  - Code generated during compilation differs slightly,
  *        but is logically correct;
  ****************************************************************/
+/*
+ * File OPTIM1.C
+ */
 int            strtoi(char const *fmt, int p2);                    /*  1 sub_013d ok++ */
 char          *ptr_token();                                        /*  2 sub-020f ok++ */
 int            const_value();                                      /*  3 sub_0289 ok+  */
@@ -749,6 +752,9 @@ bool           operandsSame(operand_t const *, operand_t const *); /* 27 sub_142
 bool           instructionsSame(inst_t const *, inst_t const *);   /* 28 sub_14ac ok++ */
 void           removeLabelRef(sym_t *);                            /* 29 sub_153d ok++ */
 void           sub_15ad();                                         /* 30 sub_15ad ok++ */
+/*
+ * File PART2.C
+ */
 bool           sub_1795();                                         /* 31 sub_1795 ok++ */
 bool           sub_1aec();                                         /* 32 sub_1aec ok++ */
 bool           sub_1b86();                                         /* 33 sub_1b86 ok++ */
@@ -769,6 +775,9 @@ term_t        *evalExpr();                                         /* 46 sub_331
 void           exp_err();                                          /* 47 sub_3595 ok++ */
 void           uconv(int, term_t *);                               /* 48 sub_359e ok+  */
 void           bconv(int, term_t *, term_t const *);               /* 49 sub_3630 ok++ */
+/*
+ * File PART2.3
+ */
 void           rel_err();                                          /* 50 sub_384d ok++ */
 operand_t     *evalOperand();                                      /* 51 sub_3856 ok+  */
 void           oper_err();                                         /* 52 sub_398e ok++ */
