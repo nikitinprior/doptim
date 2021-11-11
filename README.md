@@ -30,4 +30,6 @@ Thanks to Mark Ogden for the effort and time spent on this thankless event. In f
 
 This version includes support for windows and linux both 32 & 64 bit. It also fixes some bugs in the original code
 
+OPTIM.C file does not compile normally with Hi-Tech C compiler v3.09. There is not enough memory for the assembler. For successful compilation, the source file needs to be split into 3 parts. 
+
 Andrey Nikitin 11.11.2021
