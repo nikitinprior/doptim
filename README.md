@@ -8,12 +8,17 @@ The created executable file almost completely matches the original image.
 
 The OPTIM utility tries to perform 18 types of optimizations.
 
-OPTIM has 5 options not described in the manual:
-    -l - Prints additional information on each pass;
-    -n - Prints statistics: number of iterations and number of optimization types performed;
-    -r - disables register load optimisation;
-    -f - use inline frame initialisation;
-    -s - Unbuffered stdout.
+OPTIM has 5 options not described in the manual
+
+-l - Prints additional information on each pass;
+
+-n - Prints statistics: number of iterations and number of optimization types performed;
+
+-r - disables register load optimisation;
+
+-f - use inline frame initialisation;
+
+-s - Unbuffered stdout.
 
 Options are unknown to ordinary users and are not used when compiling a program using optimization. These options are probably intended for compiler support to find errors while performing optimization.
 
