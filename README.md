@@ -30,6 +30,52 @@ Thanks to Mark Ogden for the effort and time spent on this thankless event. In f
 
 This version includes support for windows and linux both 32 & 64 bit. It also fixes some bugs in the original code
 
-OPTIM.C file does not compile normally with Hi-Tech C compiler v3.09. There is not enough memory for the assembler. For successful compilation, the source file needs to be split into 3 parts. 
+For compilation to CP / M, the optim.c file is split into the following files:
+optim1.h - define common data for a program
+optim1.c - functions 1 to 30
+part21.c - functions 31 to 49
+part31.c - other functions
+ctype1.c - Definitions of valid characters and their types in oprtmizer
+initvar1.c - Definitions of uninitialized variables and arrays
 
-Andrey Nikitin 11.11.2021
+To compile, you need to run the command
+
+cc -o optim1.c part21.c part31.c ctype1.c initvar1.c
+
+or execute
+
+make
+
+The optimizer program is compiled without diagnostic messages and an executable file is created.
+
+To test the operation of the created executable file, you can create a file in assembly language without optimization using the command
+
+cc -s optim.c
+
+then perform optimization with additional information output
+
+optim1 -n optim.as optim.asm
+
+As a result, information about the performed optimizations will be displayed on the screen.
+
+24K, 3 iterations
+370 Redundant labels
+499 Jumps to jumps
+367 Stack adjustments
+731 Temporary labels
+683 Unref'ed labels
+487 Unreachable code
+49 Jumps to. +1
+148 Skips over jumps
+183 Common code seq's
+15 Ex (sp), hl's used
+87 Redundant operations
+488 Redundant loads / stores
+71 Simplified addresses
+5 Xor a's used
+5 Redundant ex de, hl's
+46 Code motions
+
+and the optimized code will be written to the optim.asm file. 
+
+Andrey Nikitin 12.11.2021
