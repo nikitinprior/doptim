@@ -32,10 +32,15 @@ This version includes support for windows and linux both 32 & 64 bit. It also fi
 
 For compilation to CP / M, the optim.c file is split into the following files:
 optim1.h - define common data for a program
+
 optim1.c - functions 1 to 30
+
 part21.c - functions 31 to 49
+
 part31.c - other functions
+
 ctype1.c - Definitions of valid characters and their types in oprtmizer
+
 initvar1.c - Definitions of uninitialized variables and arrays
 
 To compile, you need to run the command
