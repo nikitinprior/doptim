@@ -1,0 +1,9 @@
+-Z -Doptim11.sym -N -C -Moptim11.map -Ptext=0,data,bss -C100H -Ooptim1.COM crtcpm.obj \
+optim1.obj part21.obj part31.obj ctype1.obj initvar1.obj \
+LIBC.LIB \
+ \
+ \
+ \
+ \
+ \
+ \
