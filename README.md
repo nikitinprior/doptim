@@ -64,21 +64,37 @@ optim1 -n optim.as optim.asm
 As a result, information about the performed optimizations will be displayed on the screen.
 
 24K, 3 iterations
+
 370 Redundant labels
+
 499 Jumps to jumps
+
 367 Stack adjustments
+
 731 Temporary labels
+
 683 Unref'ed labels
+
 487 Unreachable code
+
 49 Jumps to. +1
+
 148 Skips over jumps
+
 183 Common code seq's
+
 15 Ex (sp), hl's used
+
 87 Redundant operations
-488 Redundant loads / stores
+
+488 Redundant loads/stores
+
 71 Simplified addresses
+
 5 Xor a's used
+
 5 Redundant ex de, hl's
+
 46 Code motions
 
 and the optimized code will be written to the optim.asm file. 
